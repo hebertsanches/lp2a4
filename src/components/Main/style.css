@@ -1,0 +1,27 @@
+.wrapper {
+  display: grid;
+  grid-template-areas: 
+    "sidebar users"
+    "sidebar users"
+    "sidebar pagination";
+  padding: 40px;
+  grid-template-columns: 300px minmax(300px, 800px);
+  width: 100%;
+  background-color: var(--background);
+  justify-content: center;
+}
+
+.dark-mode .wrapper {
+  background-color: var(--darkBackground);
+}
+
+@media screen and (max-width: 775px) {
+  .wrapper {
+    grid-template-areas: 
+    "sidebar"
+    "users"
+    "pagination";
+    grid-template-columns: minmax(260px, 1fr);
+    padding: 20px;
+  }
+}

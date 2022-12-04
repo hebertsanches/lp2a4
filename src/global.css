@@ -1,0 +1,46 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,600,700&display=swap');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css');
+
+:root {
+  /* LIGHT MODE */
+  --header: #878C8F;
+  --background: #FCF7FF;
+  --textColorDark: #0A090C;
+  --yellow: #F9C80E;
+  --red: #FF5964;
+  --darkRed: #e63743;
+  --blue: #38618C;
+  --darkBlue: #1e4670;
+  --gray: #666;
+  --darkGray: #414141;
+  --lightGray: #ccc;
+
+  /* DARK MODE */
+  --darkBackground: #3a3a3a;
+  --textColorLight: #FDFDFD;
+  --purple: #5E2B6F;
+  --darkPurple: #501F61;
+  --blueAlt: #0F263E;
+  --darkBlueAlt: #091C2F;
+  --grayBackground: #4E4E4E;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body, #root {
+  height: 100%;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
+  line-height: 1.2rem;
+}
+
+::selection {
+  background-color: var(--yellow);
+}
